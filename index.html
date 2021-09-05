@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Slide</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <button class="add">Tambah slide</button>
+            <h3>Slides-app</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="place">
+        
+        </div>
+
+        <!-- element untuk menampilkan pilihan jenis slide yang akan di tampilkan -->
+        <div class="card-1 category display">
+            <div class="close">
+                <button class="btnClose">X</button>
+            </div>
+            <h3>Pilih Jenis Slide</h3>
+            <div class="buttons">
+                <button class="inputGambar btn">Gambar</button>
+                <button class="inputText btn">Text</button>
+            </div>
+        </div>
+        
+        <form class="card-2  category display">
+            <div class="close">
+                <button class="btnClose">X</button>
+            </div>
+            <label for="file" class="btn" style="padding: 5px; text-align: center; margin-bottom: 10px;">Upload</label>
+            <input type="file" class="display" id="file" onchange="loadFile.upload(event)" required>
+            <img style="margin-bottom: 10px;" id="output" width="200" />
+            <div class="buttons" style="margin-top: 5px;">
+                <button type="submit" class="inputGambar-2 btn">Submit</button>
+            </div>
+        </form>
+
+        <form class="card-3  category display">
+            <div class="close">
+                <button class="btnClose">X</button>
+            </div>
+            <label for="judul">Judul</label>
+            <input type="text" name="" id="judul" required>
+            <label for="teks" re>Teks</label>
+            <textarea name="" id="teks" cols="30" rows="10" required></textarea>
+            <div class="buttons" style="margin-top: 5px;">
+                <button type="submit" class="inputText-2 btn">Submit</button>
+            </div>
+        </form>
+
+        <span class="back display">
+        </span>
+    </main>
+    <script src="js/partials.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
